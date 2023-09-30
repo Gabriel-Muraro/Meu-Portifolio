@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&family=Inter&family=Josefin+Sans:ital@0;1&family=Prata&display=swap');
+*{
+
+    box-sizing: border-box;
+
+}
+body{
+
+    padding: 0;
+    margin: 0;
+    background-color:#A9A9A9;
+
+}
+
+#header{
+
+    background-color: #708090;
+    display: flex;
+    align-items: center;
+
+}
+
+#name{
+
+margin-left: 45%;
+font-size: 20px;
+font-family:'Dosis', sans-serif;
+
+
+}
+
+#navBar{
+
+margin-left: 5%;
+width: 30%;
+
+
+}
+
+#index, #jobs, #contact{
+
+    text-decoration: none;
+    color:black;
+    font-family:'Dosis', sans-serif;
+    margin-right: 2%;
+    margin-left: 2%;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: 17px;
+    
+}
+
+a:hover{
+
+    zoom: 115%;
+    background-color: #2F4F4F;
+
+}
+
+#photoSec{
+
+    margin-top: 2%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+}
+
+
+#infoTtl{
+
+font-family: 'Josefin Sans', sans;
+font-size: 20px;
+
+}
+
+#infoTxt{
+
+    font-family:'Dosis', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    margin-left: 43%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 35% 20% 35% 20%;
+
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 35% 20% 35% 20%;
+    background: linear-gradient(-45deg, #4682B4 0%, #808080 100% );
+    z-index: -10;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card::after {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #4682B4 0%, #2F4F4F 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .card:hover::after {
+    filter: blur(30px);
+  }
+  
+  .card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+
+  #photoP{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 35% 20% 35% 20%;
+
+  }
+
+
+  #infoSec{
+
+    display: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+
+  }
+
+  #quemArt, #ondeArt, #quaisArt{
+
+  margin-right: 5%;  
+  width: 85%;  
+   
+
+  }
+  #infoP, #infoP1{
+
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #infoP{
+
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline gray;
+
+  }
+
+
+
+
+
+  
+  
